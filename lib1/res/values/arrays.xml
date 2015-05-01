@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_list_preference">
+        <item>Alpha Option 01</item>
+        <item>Beta Option 02</item>
+        <item>Charlie Option 03</item>
+    </string-array>
+
+    <string-array name="entryvalues_list_preference">
+        <item>alpha</item>
+        <item>beta</item>
+        <item>charlie</item>
+    </string-array>
+
+    <string-array name="testArray">
+        <item>"item1"</item>
+        <item>"item2"</item>
+        <item>"item3"</item>
+        <item>"item4"</item>
+        <item>"item5"</item>
+        <item>"item6"</item>
+        <item>"item7"</item>
+        <item>"item8"</item>
+        <item>"item9"</item>
+        <item>"item10"</item>
+    </string-array>
+
+</resources>

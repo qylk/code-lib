@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="banner">
+        <attr name="init_position" format="integer"></attr>
+        <attr name="auto_play" format="boolean"></attr>
+        <attr name="auto_play_interval" format="integer"></attr>
+        <attr name="point_normal" format="reference"></attr>
+        <attr name="point_focused" format="reference"></attr>
+        <attr name="point_spacing" format="dimension"></attr>
+        <attr name="show_point" format="boolean"></attr>
+        <attr name="point_gravity" format="dimension">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr>
+        <attr name="point_container_background" format="reference|color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="roundImageView">
+        <attr name="radius" format="dimension"></attr>
+        <attr name="type" format="dimension">
+            <enum name="ROUND_RECT" value="0"/>
+            <enum name="ROUND" value="1"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="myDrawableState">
+        <attr name="state_mystate" format="boolean"/>
+    </declare-styleable>
+</resources>

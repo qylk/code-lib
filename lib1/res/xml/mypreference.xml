@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="自定义" >
+        <com.qylk.code.preference.IntegerPreference
+            android:defaultValue="102"
+            android:key="counter"
+            android:summary="点击我"
+            android:title="ClickCounter" >
+        </com.qylk.code.preference.IntegerPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="依赖" >
+        <CheckBoxPreference
+            android:key="wifi"
+            android:title="wifi" />
+
+        <EditTextPreference
+            android:defaultValue="default_value"
+            android:dependency="wifi"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:title="EditTextPreference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="组件" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="checkbox"
+            android:summary="summary_here"
+            android:title="CheckBoxPreference" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch"
+            android:summary="summary_here"
+            android:title="SwitchPreference" />
+
+        <ListPreference
+            android:defaultValue="alpha"
+            android:dialogTitle="dialog_title"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:key="default_list"
+            android:summary="summary_here"
+            android:title="list" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="intent" >
+        <PreferenceScreen
+            android:key="intent2"
+            android:summary="打开系统设置"
+            android:title="intent_preference" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.wifi.WifiSettings"
+                android:targetPackage="com.android.settings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="intent2"
+            android:summary="打开网页"
+            android:title="intent_preference_web" >
+
+            <!-- intent必须放在PreferenceScreen中 -->
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.baidu.com" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceScreen
+        android:key="screen_preference"
+        android:summary="另一个preference"
+        android:title="PreferenceScreen" >
+        <CheckBoxPreference
+            android:key="next_screen_checkbox_preference"
+            android:summary="summary_next_screen_toggle_preference"
+            android:title="title_next_screen_toggle_preference" />
+    </PreferenceScreen>
+
+</PreferenceScreen>
