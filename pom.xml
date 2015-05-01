@@ -8,7 +8,7 @@
     <modules>
         <module>lib1</module>
         <module>views</module>
-        <module>wedgets</module>
+        <module>widgets</module>
     </modules>
     <packaging>pom</packaging>
 
