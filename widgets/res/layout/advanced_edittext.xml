@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLength="15"
+        android:paddingLeft="70dp"
+        android:paddingRight="40dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/content"
+        android:layout_alignLeft="@id/content"
+        android:layout_marginLeft="5dp"
+        android:text="用户名:" />
+
+    <ImageView
+        android:id="@+id/validateIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@android:drawable/star_off"
+        android:visibility="gone" />
+
+</RelativeLayout>

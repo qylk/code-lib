@@ -7,6 +7,7 @@
     <file type="android" url="file://$PROJECT_DIR$/lib1" />
     <file type="android" url="file://$PROJECT_DIR$/pic_picker" />
     <file type="android" url="file://$PROJECT_DIR$/views" />
+    <file type="android" url="file://$PROJECT_DIR$/widgets" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="pic_picker" />
         <module name="views" />
+        <module name="wedgets" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="module1" target="1.6" />
       <module name="pic_picker" target="1.6" />
       <module name="views" target="1.6" />
+      <module name="wedgets" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
